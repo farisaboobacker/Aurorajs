@@ -8,6 +8,8 @@
 
 // voting system >=18 eligble | not Eligible
 // var Age=parseInt(prompt("Enter your Age")); // Explicit|Implicit
+
+
 function Voting(age) {
 
     var Age = parseInt(age); // Explicit|Implicit
@@ -81,6 +83,77 @@ function Grade(grade) {
             break;
     }
 }
+
+// Events
+// Functions
+// function  are named block of code having set of statments 
+// that exececute later when it is invoked/called and it helpes 
+// to code reusablility.
+
+function Calculator() {
+    var num1=parseInt(document.getElementById('num1').value);
+    var num2=parseInt(document.getElementById('num2').value);
+     var op=document.getElementById('op').value;
+    // console.log(num1,num2,op)
+    var Display=document.getElementById('display');
+
+    switch (op) {
+        case '+':
+            Display.value=num1+num2;
+            return false;
+        case '-':
+            Display.value=num1-num2;
+            return false;
+            
+        case '*':
+            Display.value=num1*num2;
+            return false;
+            
+        case '/':
+            Display.value=num1/num2;
+            return false;
+        default:
+            break;
+    }
+}
+function CalculatorBtn(op) {
+    var num1=parseInt(document.getElementById('num1').value);
+    var num2=parseInt(document.getElementById('num2').value);
+    // var op=document.getElementById('op').value;
+    // console.log(num1,num2,op)
+    var Display=document.getElementById('display');
+
+    switch (op) {
+        case '+':
+            Display.value=num1+num2;
+            return false;
+        case '-':
+            Display.value=num1-num2;
+            return false;
+            
+        case '*':
+            Display.value=num1*num2;
+            return false;
+            
+        case '/':
+            Display.value=num1/num2;
+            return false;
+        default:
+            break;
+    }
+}
+
+// var x=parseInt(prompt("Enter First number"));
+// var y=parseInt(prompt("Enter second number"));
+// var o=prompt("Enter operator");
+
+
+// result=Calculator(x,y,o);
+// console.log(result);
+
+// if (Sum(10,30) == 41) {
+//     console.log("Addition performed")
+// }
 
 
 // ternory  (condition)? True : false;

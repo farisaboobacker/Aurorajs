@@ -15,9 +15,11 @@
                 transition: 1s;
             }
         </style>
+        <script src="./js/main.js"></script>
 </head>
 
 <body>
+
     <h1 align="center" class="" id="head">My WEB PAGE</h1>
 
    <div class="container p-5 shadow border rounded" id="main">
@@ -36,8 +38,42 @@
         <option value="E+">E+</option>
     </select>
     <h1 id="graderes">Result</h1>
+
+    <!-- <input type="text" onfocus="this.style.backgroundColor='red'" value="Helllo"> -->
+
+    <!-- <p ondblclick="alert('Hello Pragaraph')">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos, voluptatum.</p> -->
    </div>
-  
+   <div class="container p-5 shadow border rounded mt-3" >
+    <input type="text" id="display" class="form-control shadow form-control-lg bg-success-subtle text-center mx-auto w-25" disabled><br>
+<form action="">
+    <div class="input-group">
+        <input type="number" class="form-control" placeholder="Enter Number one" id="num1">
+        <input type="number" class="form-control" placeholder="Enter Number Two" id="num2">
+        <button class="btn btn-dark" onclick="return CalculatorBtn('+')">+</button>
+        <button class="btn btn-dark" onclick="return CalculatorBtn('-')">-</button>
+        <button class="btn btn-dark" onclick="return CalculatorBtn('*')">*</button>
+        <button class="btn btn-dark" onclick="return CalculatorBtn('/')">/</button>
+        <!-- <input type="submit" class="btn btn-primary" value="="> -->
+    </div>
+</form>
+</div>
+
+   <div class="container p-5 shadow border rounded mt-3" >
+            <input type="text" id="display" class="form-control shadow form-control-lg bg-success-subtle text-center mx-auto w-25" disabled><br>
+        <form action="" onsubmit="return Calculator()">
+            <div class="input-group">
+                <input type="number" class="form-control" placeholder="Enter Number one" id="num1">
+                <input type="number" class="form-control" placeholder="Enter Number Two" id="num2">
+                <select name=""  class="form-select "  id="op" onchange="Calculator()">
+                    <option value="+">+</option>
+                    <option value="-">-</option>
+                    <option value="*">*</option>
+                    <option value="/">/</option>
+                </select>
+                <input type="submit" class="btn btn-primary" value="=">
+            </div>
+        </form>
+   </div>
     <!-- <p id="demo" >Lorem ipsum dolor, sit amet consectetur adipisicing elit. Suscipit magnam quidem eos libero, quis tempora.</p>
     <a href="https://www.google.com/" id="search">Google</a>
     <button class="btn btn-danger" onclick="test()">click</button>
@@ -90,7 +126,7 @@
             // redecl    ✔           ✖           ✖
             // reassgn   ✔           ✔           ✖
             // usage     ✔           ✖           ✖
-jgfgghtfhttyjh
+
             // unique
             // start with alhet or undrtscroe/$
             // Number
