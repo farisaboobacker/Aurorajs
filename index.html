@@ -15,7 +15,7 @@
                 transition: 1s;
             }
         </style>
-        <script src="./js/main.js"></script>
+        <!-- <script src="./js/main.js"></script> -->
 </head>
 
 <body>
@@ -60,15 +60,15 @@
 
    <div class="container p-5 shadow border rounded mt-3" >
             <input type="text" id="display" class="form-control shadow form-control-lg bg-success-subtle text-center mx-auto w-25" disabled><br>
-        <form action="" onsubmit="return Calculator()">
+        <form action="" onsubmit="return name()">
             <div class="input-group">
                 <input type="number" class="form-control" placeholder="Enter Number one" id="num1">
                 <input type="number" class="form-control" placeholder="Enter Number Two" id="num2">
-                <select name=""  class="form-select "  id="op" onchange="Calculator()">
+                <select name=""  class="form-select"  id="op" onchange="Calculator()">
                     <option value="+">+</option>
                     <option value="-">-</option>
                     <option value="*">*</option>
-                    <option value="/">/</option>
+                    <option value="/">/</option> 
                 </select>
                 <input type="submit" class="btn btn-primary" value="=">
             </div>

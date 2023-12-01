@@ -93,7 +93,7 @@ function Grade(grade) {
 function Calculator() {
     var num1=parseInt(document.getElementById('num1').value);
     var num2=parseInt(document.getElementById('num2').value);
-     var op=document.getElementById('op').value;
+    var op=document.getElementById('op').value;
     // console.log(num1,num2,op)
     var Display=document.getElementById('display');
 
@@ -143,6 +143,15 @@ function CalculatorBtn(op) {
     }
 }
 
+// var area= (length,width)=> length*width;
+// area(100,300);
+
+// name(200,300);
+
+// var sum=(num1,num2,...data)=> num1+num2;
+
+// console.log(sum(20,30,40,50,60,70));
+
 // var x=parseInt(prompt("Enter First number"));
 // var y=parseInt(prompt("Enter second number"));
 // var o=prompt("Enter operator");
@@ -159,3 +168,29 @@ function CalculatorBtn(op) {
 // ternory  (condition)? True : false;
 
 // out.innerHTML=Age >= 18?"Eligble":"Not Eligble";
+
+// Array
+var arr=[545,5484,541,5458];
+var arr2=new Array(50,60,90);
+    arr2=[10,20,30,40];
+
+    var x=[25,50,75,100];  // index  0 1 2 3
+        x[2]=85;
+    
+    console.log(x); // 25
+
+var z=[
+        ["Akil",29,"Akil@mail.com",[100,200,300]],
+        ["Arun",25,"Arun@mailcom"],
+        ["Akash",27,"Akash@mail.com"],
+    ];
+
+    console.log(z[0][3][2]);
+
+    var student=["Akash",27,"Akash@mail.com",27];
+    student.push("2022-06-07");
+    student.push("Passed");
+    student.pop();
+    console.log(student.lastIndexOf(27));
+
+   
