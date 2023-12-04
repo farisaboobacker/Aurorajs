@@ -179,18 +179,69 @@ var arr2=new Array(50,60,90);
     
     console.log(x); // 25
 
-var z=[
-        ["Akil",29,"Akil@mail.com",[100,200,300]],
-        ["Arun",25,"Arun@mailcom"],
-        ["Akash",27,"Akash@mail.com"],
-    ];
 
-    console.log(z[0][3][2]);
+
+    //console.log(z[0][3][2]);
 
     var student=["Akash",27,"Akash@mail.com",27];
     student.push("2022-06-07");
     student.push("Passed");
     student.pop();
     console.log(student.lastIndexOf(27));
+    //var res=student.concat(x);
+    // var res=student.fill(x,2,4)
+    //var res=x.shift();
 
-   
+    //console.log(res);
+
+   // LOOPS
+    // for 
+    // while
+    // do while
+    // for of
+    // for in
+    // foreach
+
+    // for(initial;Condition;increment/decrement){
+        //statment
+    //}
+    for (let i = 1; i <=100; i++) {
+        document.getElementById('loop').innerHTML+=`
+        <div class="col">
+        <span class="card bg-success-subtle p-4 m-3 border shadow rounded">${i}<span>
+        </div>
+        `;
+    }
+    var z=[
+        ["Akil",29,"Akil@mail.com",[100,200,300]],
+        ["Arun",25,"Arun@mailcom",[400,500,600]],
+        ["Akash",27,"Akash@mail.com",[700,800,900]],
+    ];
+
+    // for (let j = 0; j < z.length; j++) {
+    //    for (let k = 0; k < z[j].length; k++) {
+    //     console.log(z[j][k]);
+    
+    //    }
+    // }
+
+    // WHILE
+        var count=0;
+        while (count <=10) {
+            document.getElementById('loop').innerHTML+=`
+            <div class="col">
+            <span class="card bg-danger-subtle p-4 m-3 border shadow rounded">${count}<span>
+            </div>
+            `;
+            count++;
+        }
+
+        
+     for (let j = x.length-1; j >=0; j--) {
+        console.log(x[j]);
+     }
+     do {
+        console.log("10>20 result");
+     } while (10>20);
+
+     
