@@ -177,7 +177,7 @@ var arr2=new Array(50,60,90);
     var x=[25,50,75,100];  // index  0 1 2 3
         x[2]=85;
     
-    console.log(x); // 25
+    //console.log(x); // 25
 
 
 
@@ -187,7 +187,7 @@ var arr2=new Array(50,60,90);
     student.push("2022-06-07");
     student.push("Passed");
     student.pop();
-    console.log(student.lastIndexOf(27));
+    //console.log(student.lastIndexOf(27));
     //var res=student.concat(x);
     // var res=student.fill(x,2,4)
     //var res=x.shift();
@@ -237,12 +237,12 @@ var arr2=new Array(50,60,90);
         }
 
         
-     for (let j = x.length-1; j >=0; j--) {
-        console.log(x[j]);
-     }
-     do {
-        console.log("10>20 result");
-     } while (10>20);
+    //  for (let j = x.length-1; j >=0; j--) {
+    //     console.log(x[j]);
+    //  }
+    //  do {
+    //     console.log("10>20 result");
+    //  } while (10>20);
 
      var animalData=[
         {
@@ -1056,76 +1056,198 @@ var arr2=new Array(50,60,90);
 
     
 
-    for (let row of animalData) {
-        document.getElementById('animal').innerHTML+=`
-        <div class="col-12 col-sm-3">
-            <div class="card bg-warning-subtle border shadow rounded">
-                <img src="${row.product_image}" class="card-img">
-                <div class="card-body">
-                    <p class="card-title">${row.product_name}</p>
-                    <p class="card-subtitle">${row.category}</p>
-                    <p class="card-text">${row.quantity}</p>
-                    <p class="card-text">${row.price}</p>
-                </div>
-             <div>
-        </div>
-        `;
-    }
-    var bike=[10,20,30,];
-    var car={
-        Name:"BMW",
-        Drive(){
-            return this.Name;
-        },
-        Stop:()=>{
+    // for (let row of animalData) {
+    //     document.getElementById('animal').innerHTML+=`
+    //     <div class="col-12 col-sm-3">
+    //         <div class="card bg-warning-subtle border shadow rounded">
+    //             <img src="${row.product_image}" class="card-img">
+    //             <div class="card-body">
+    //                 <p class="card-title">${row.product_name}</p>
+    //                 <p class="card-subtitle">${row.category}</p>
+    //                 <p class="card-text">${row.quantity}</p>
+    //                 <p class="card-text">${row.price}</p>
+    //             </div>
+    //          <div>
+    //     </div>
+    //     `;
+    // }
+//     var bike=[10,20,30,];
+//     var car={
+//         Name:"BMW",
+//         Drive(){
+//             return this.Name;
+//         },
+//         Stop:()=>{
 
-        }
+//         }
 
-    };
+//     };
 
-    car.Name;
-    car["Name"];
-    car.Drive();
-    car.Stop();
+//     car.Name;
+//     car["Name"];
+//     car.Drive();
+//     car.Stop();
 
 
-    var Person={
-        Name: "Nived",
-        Age : 25,
-        Mob : 9876543210,
-        Walk(){
-            console.log(this.Name +" is Walking");
-        },
-        Running(){
+//     var Person={
+//         Name: "Nived",
+//         Age : 25,
+//         Mob : 9876543210,
+//         Walk(){
+//             console.log(this.Name +" is Walking");
+//         },
+//         Running(){
 
-        },
-        Swim: () =>{
+//         },
+//         Swim : () =>{
             
+//         }
+//     }
+// var sum=()=>{
+    
+// }
+    // Person.Name;
+    // alert(Person["Age"]);
+    // Person.Walk();
+    // Person.Swim();
+    
+    // for (const item in Person) {
+    //     console.log(Person[item]);
+    // }
+    
+    // for (const item of animalData) {
+    //     console.log(item.product_name);
+    //     console.log(item.category);
+    // }
+    // console.table(Person);
+
+    // for (let ic = 0; ic < bike.length; ic++) {
+    //     alert(item);
+    // }
+
+    // bike.forEach(item => {
+    //     alert(item);
+    // });
+    
+    // for (const item of bike) {
+    //     alert(item);
+    // }
+//Exception Handling
+// var num1=parseInt(prompt("First"));
+// var num2=parseInt(prompt("second"));
+// try {
+//     if (num2==0) {
+//         throw "Cannot Divide by Zero";
+//     }else{
+//         console.log(num1/num2)
+//     }
+// } catch (error) {
+//     console.error(error)
+//     num2=parseInt(prompt("Please Enter Valid Second number"));
+//     console.log(num1/num2);
+// }finally{
+//     console.log("opration Done !!");
+// }
+    //"Cannot Divide by Zero"
+
+    // strings 
+
+    // var txt="     Hello    world h , 10 world hello"; // array
+    // var txt2=" bye bye"
+    // varres=txt.includes("Hello");
+    // res=txt.concat(txt2);
+    // res=txt.startsWith("h"); // boolean true/false
+    // res=txt.endsWith("hello");
+    // res=txt.indexOf("world"); //22
+    // res=txt.lastIndexOf("world"); //last occorrens index
+    // res=txt.length;
+    // res=txt.match("world");// array of matched string
+    // res=txt.matchAll("world");// array of matched all string
+    // res=txt.padEnd(10,'*');
+    // res=txt.padStart(10,'*');
+    // res=txt.repeat(2);
+    // res=txt.replace("world","Island");
+    // res=txt.search("Hello");
+    // res=txt.slice(txt.indexOf("world"),txt.indexOf(','));
+    // res=txt.split(',');
+    // res=txt.slice(10,-2);
+    // res=txt.substring(0,10);
+    // res=txt.toLocaleLowerCase();// 
+    // res=txt.toLocaleUpperCase(); // copy of uppercased string
+    // res=txt.toUpperCase();
+    // res=txt.trim();
+    // res=txt.trimEnd();
+    // res=txt.trimStart();
+    
+    // console.log(txt);
+    // console.log(res);
+
+   // input date  sever age
+   // subscription
+    //reachrge 
+    var dayNames = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
+    var date=new Date();// create date
+    // var res=date.getDate();
+        // res=dayNames[date.getDay()];
+        // res=date.getFullYear();
+        // res=date.getMonth();
+        // res=date.getHours();
+        // res=date.getMinutes();
+        // res=date.getMilliseconds();
+        // clock.innerHTML=date.getSeconds();
+        // res=date.getSeconds();
+        // res=date.toLocaleTimeString();
+        // min=sec/60;
+        // hou=min/60;
+        // dy=hou/24;
+        // mon=dy/30;
+        // res=date.toLocaleDateString();
+        date.setFullYear(2023);
+        date.setDate(date.getDate()+30);
+        var month= ["January","February","March","April","May","June","July",
+            "August","September","October","November","December"];
+
+        date.setMonth(month.indexOf("October"));
+        res=date;
+
+    console.log(res);
+
+    function subscribe(subMonth) {
+    var dayNames = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
+    var month= ["January","February","March","April","May","June","July",
+    "August","September","October","November","December"];
+        dt=new Date();
+        today=new Date();
+        switch (subMonth) {
+            case 3:
+                TodayDate=today.toLocaleDateString();
+                dt.setMonth(dt.getMonth()+3)
+                ExpiryDate=dt.toLocaleDateString();
+                qurterYear.innerHTML=`
+                <h5 class="card-subtitle text-bg-success p-1">Today Date : ${dayNames[today.getDay()]} - ${month[today.getMonth()]}-${today.getFullYear()}</h5>
+                <h5 class="card-subtitle text-bg-danger p-1">Expiry Date : ${dayNames[dt.getDay()]} - ${month[dt.getMonth()]}-${dt.getFullYear()}</h5>
+                `
+                break;
+            case 12:
+                TodayDate=today.toLocaleDateString();
+                dt.setMonth(dt.getMonth()+12)
+                ExpiryDate=dt.toLocaleDateString();
+                FullYear.innerHTML=`
+                <h5 class="card-subtitle text-bg-success p-1">Today Date : ${TodayDate}</h5>
+                <h5 class="card-subtitle text-bg-danger p-1">Expiry Date : ${ExpiryDate}</h5>
+                `
+                break;
+            case 6:
+                TodayDate=today.toLocaleDateString();
+                dt.setMonth(dt.getMonth()+6)
+                ExpiryDate=dt.toLocaleDateString();
+                HalfYear.innerHTML=`
+                <h5 class="card-subtitle text-bg-success p-1">Today Date : ${TodayDate}</h5>
+                <h5 class="card-subtitle text-bg-danger p-1">Expiry Date : ${ExpiryDate}</h5>
+                `
+                break;
+        
+            default:
+                break;
         }
     }
-    Person.Name;
-    alert(Person["Age"]);
-    Person.Walk();
-    
-    for (const item in Person) {
-        console.log(Person[item]);
-    }
-    
-    for (const item of animalData) {
-        console.log(item.product_name);
-        console.log(item.category);
-    }
-    console.table(Person);
-
-    for (let ic = 0; ic < bike.length; ic++) {
-        alert(item);
-    }
-
-    bike.forEach(item => {
-        alert(item);
-    });
-    
-    for (const item of bike) {
-        alert(item);
-    }
-    

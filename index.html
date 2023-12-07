@@ -21,7 +21,47 @@
 <body>
 
     <h1 align="center" class="" id="head">My WEB PAGE</h1>
+    <div class="container p-5 shadow border rounded">
+        <div class="row row-cols-3 g-4">
+            <div class="col">
+                <div class="card">
+                    <div class="card-body">
+                        <h4 class="card-title">3 Month</h4>
+                        <div id="qurterYear"></div>
+                        <div class="card-footer">
+                            <div class="btn btn-primary" onclick="subscribe(3)">SUBSCRIBE</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card">
+                    <div class="card-body">
+                        <h4 class="card-title">1 year</h4>
+                        <div id="FullYear"></div>
+                        <div class="card-footer">
+                            <div class="btn btn-primary" onclick="subscribe(12)">SUBSCRIBE</div>
+                        </div>
+                    </div>
+                </div>
+                </div>
+                <div class="col">
+                <div class="card">
+                    <div class="card-body">
+                        <h4 class="card-title">6 month</h4>
+                        <div id="HalfYear"></div>
+                        <div class="card-footer">
+                            <div class="btn btn-primary" onclick="subscribe(6)">SUBSCRIBE</div>
+                        </div>
+                    </div>
+                </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="clock" class="text-bg-dark border rounded-circle p-5 w-25">
 
+    </div>
    <div class="container p-5 shadow border rounded" id="main">
     <input type="text" class="form-control" onkeyup=" Voting(this.value)" >
     <h1 id="output">Result</h1>
