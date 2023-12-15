@@ -14,13 +14,45 @@
             h1,div{
                 transition: 1s;
             }
+            input.err{
+                border: 2px solid red;
+            }
+            input::after{
+                content: "xcdss";
+                padding: 10px;
+                background-color: red;
+            }
+            input.valid{
+                border: 2px solid green;
+            }
+            .valid::after{
+                content: "✔";
+            }
         </style>
-        <!-- <script src="./js/main.js"></script> -->
+        <script src="./js/main.js"></script>
 </head>
 
 <body>
 
     <h1 align="center" class="" id="head">My WEB PAGE</h1>
+<div class="container">
+    <form name="myForm" onsubmit="return SubmitData()">
+        <div class="mt-3">
+            <input type="text"  class="form-control " name="uname" id="uname">
+            <span id="erruname" class="text-danger"></span>
+        </div>
+        <div class="mt-3">
+            <input type="text" class="form-control " name="password" id="pass">
+            <span id="errpassword" class="text-danger"></span>
+        </div>
+        <div class="mt-3">
+            <input type="submit" value="Save" class="btn btn-danger form-control">
+        </div>
+    </form>
+</div>
+    <h3  class="text-bg-info text-center m-0 p-0">Offer Time remining</h3>
+    <h1 id="clocks" class="text-bg-info text-center"></h1>
+    <button onclick="stop()">stop</button>
     <div class="container p-5 shadow border rounded">
         <div class="row row-cols-3 g-4">
             <div class="col">
@@ -118,13 +150,21 @@
     <div class="row row-cols-4 g-3" id="animal">
 
     </div>
+
 </div>
 
-   <div class="container p-5 shadow border rounded mt-3 mb-5">
+   <div class="container p-5 shadow border rounded mt-3 mb-5" >
         <div class="row row-cols-6" id="loop">
 
         </div>
    </div>
+   <script>
+
+    var cont=document.querySelector(".container");
+    cont.addEventListener("click",function (){
+
+    })
+   </script>
     <!-- <p id="demo" >Lorem ipsum dolor, sit amet consectetur adipisicing elit. Suscipit magnam quidem eos libero, quis tempora.</p>
     <a href="https://www.google.com/" id="search">Google</a>
     <button class="btn btn-danger" onclick="test()">click</button>
@@ -242,7 +282,7 @@
         
 
     </script>
-    <script src="./js/main.js"></script>
+    <script type="module" src="./js/main.js"></script>
 </body>
 
 </html>

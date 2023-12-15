@@ -1,4 +1,4 @@
-
+//"use strict";
 
 // Conditional
 
@@ -1251,3 +1251,117 @@ var arr2=new Array(50,60,90);
                 break;
         }
     }
+
+    var res=Math.min(10,20,330,50,4);
+        res=Math.max(165,65165,65,5,56);
+        res=Math.round(10.5);
+        res=Math.floor(10.9);
+        res=Math.ceil(10.5);
+        res=Math.sqrt(25);
+        res=Math.pow(5,2);
+        res=Math.random(10);
+    console.log(res);
+
+    var intervel=setInterval(clock,-1000);
+
+    function clock() {
+        clocks.innerHTML=new Date().toLocaleTimeString();
+    }
+    function stop() {
+        clearInterval(intervel);
+    }
+
+    var txt="Hello cWolrd b, hello wolrd a 123456785421"
+    // var pattern = /^\w+@[a-zA-Z_]+?\.[a-zA-Z]{2,3}$/;
+    var pattern=/wolrd\b/;
+    // var res=txt.match(pattern);
+    console.table(pattern.test(txt))
+    console.table(pattern.exec(txt))
+
+    var sett=new Set();
+    sett.add(10);
+    sett.add(11);
+    sett.add(12);
+    sett.delete(10);
+    var res=sett.values();
+    console.log(res)
+
+
+    var mapp=new Map([
+        ["Id",100],
+        ["Username","akil@123"]
+    ]);
+
+    mapp.set("Name","Akil");
+    mapp.set("Age",29);
+
+    console.log(mapp.get('Username'));
+    console.log(mapp.values());
+
+    for (const item of mapp.entries()) {
+        console.log(item)
+    }
+
+var app;
+app=10;
+
+//import animalsDatas from "./animal.js";
+
+
+//console.log(animalData);
+
+// data=`${app}`
+
+
+
+function SubmitData() {
+    var form=document.forms["myForm"];
+    var formData={};
+    
+    // Validate User name
+    var unameTxt=form["uname"].value;
+    var unameError;
+    if (unameTxt=='') {
+        unameError="Please Enter Your User name";
+        erruname.innerHTML=unameError;
+        //return false;
+    }else{
+        formData["Username"]=unameTxt;
+        erruname.innerHTML='';
+    }
+    
+    // VAlidate password
+    var passwordTxt=form["password"].value;
+    var passwordError;
+    if (passwordTxt=='') {
+        passwordError="Please Enter Your Password";
+        pass.classList.add("err");
+        errpassword.innerHTML=passwordError;
+        //return false;
+    }else if(passwordTxt.length > 6 ){
+        passwordError="Maximum 6 characters";
+        pass.classList.add("err");
+        errpassword.innerHTML=passwordError;
+    } else{
+        formData["Password"]=passwordTxt;
+        pass.classList.remove("err");
+        pass.classList.add("valid");
+        errpassword.innerHTML='';
+        passwordError='';
+    }
+
+    // Submit data
+    console.log(formData);
+    return false;
+
+
+    // else {
+    //     formData["Username"]=unameTxt.value;
+    //     formData["Password"]=passwordTxt.value;
+    //     console.log(formData);
+    //     return true;
+    // }
+
+    
+    
+}
